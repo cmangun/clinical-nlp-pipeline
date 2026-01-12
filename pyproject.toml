@@ -1,0 +1,38 @@
+[project]
+name = "clinical-nlp-pipeline"
+version = "1.0.0"
+description = "Medical NLP pipeline for entity extraction, normalization, and clinical text processing"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Christopher Mangun", email = "cmangun@gmail.com"}
+]
+requires-python = ">=3.11"
+keywords = ["nlp", "clinical", "medical", "ner", "healthcare", "umls"]
+
+dependencies = [
+    "pydantic>=2.5.0",
+    "structlog>=24.1.0",
+    "spacy>=3.7.0",
+    "transformers>=4.37.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+    "ruff>=0.1.14",
+]
+models = [
+    "en-core-sci-lg @ https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.3/en_core_sci_lg-0.5.3.tar.gz",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
