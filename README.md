@@ -6,9 +6,9 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![HIPAA Compliant](https://img.shields.io/badge/HIPAA-Compliant-green.svg)](#compliance)
 
-**Production-grade clinical NLP pipeline for medical entity extraction, UMLS concept linking, and clinical document processing.**
+Production-grade clinical NLP pipeline for medical entity extraction, UMLS concept linking, and clinical document processing.
 
-## 🎯 Business Impact
+## Business Impact
 
 | Metric | Improvement | How |
 |--------|-------------|-----|
@@ -19,7 +19,7 @@
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```mermaid
 flowchart TB
@@ -65,28 +65,28 @@ flowchart TB
 
 ---
 
-## ✨ Key Features
+## Key Features
 
-### 🏥 Medical Entity Recognition
+### Medical Entity Recognition
 - **Medications**: Drug names, dosages, frequencies, routes
 - **Conditions**: Diagnoses, symptoms, findings
 - **Procedures**: Surgeries, tests, treatments
 - **Anatomy**: Body parts, laterality
 - Custom entity types via configuration
 
-### 🔗 UMLS Concept Linking
+### UMLS Concept Linking
 - Integration with full UMLS Metathesaurus (2M+ concepts)
 - SNOMED CT, ICD-10, RxNorm, LOINC mapping
 - Configurable confidence thresholds
 - Disambiguation via clinical context
 
-### 🛡️ De-identification
+### De-identification
 - 18 HIPAA Safe Harbor identifier types
 - Ensemble methods (rules + ML)
 - Configurable redaction strategies
 - Audit logging for compliance
 
-### ⚡ Production Performance
+### Production Performance
 - GPU-accelerated inference
 - Batch processing support
 - Async API with FastAPI
@@ -94,7 +94,7 @@ flowchart TB
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Python 3.11+
@@ -131,7 +131,7 @@ python -m src.cli process --input notes.txt --output results.json
 
 ---
 
-## 📖 Usage Examples
+## Usage Examples
 
 ### Extract Medical Entities
 
@@ -191,7 +191,7 @@ print(f"Processed {results.total_documents} documents")
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 clinical-nlp-pipeline/
@@ -217,7 +217,7 @@ clinical-nlp-pipeline/
 
 ---
 
-## 🧪 Testing
+## Testing
 
 ```bash
 # Run all tests
@@ -232,7 +232,7 @@ pytest tests/test_ner.py -v
 
 ---
 
-## 📊 Performance Benchmarks
+## Performance Benchmarks
 
 | Dataset | Precision | Recall | F1 |
 |---------|-----------|--------|-----|
@@ -244,19 +244,19 @@ pytest tests/test_ner.py -v
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ---
 
-## 📜 License
+## License
 
 MIT License - see [LICENSE](LICENSE) for details.
 
 ---
 
-## 👤 Author
+## Author
 
 **Christopher Mangun** - Forward Deployed Engineer  
 - GitHub: [@cmangun](https://github.com/cmangun)
@@ -264,7 +264,7 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 ---
 
-## 🔗 Related Projects
+## Related Projects
 
 - [healthcare-rag-platform](https://github.com/cmangun/healthcare-rag-platform) - HIPAA-compliant RAG
 - [mlops-healthcare-platform](https://github.com/cmangun/mlops-healthcare-platform) - MLOps with FDA validation
